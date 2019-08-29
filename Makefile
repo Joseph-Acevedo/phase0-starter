@@ -10,7 +10,7 @@ ifndef PREFIX
 	PREFIX = $(HOME)
 endif
 
-USLOSS_VERSION = 3.0
+USLOSS_VERSION = 3.6
 
 SRCS = phase0.c
 
@@ -58,5 +58,10 @@ $(TARGET):  $(COBJS)
 
 clean:
 	rm -f $(COBJS) $(TARGET) $(DEPS)
+
+tar: $(TARGET)-starter.tgz
+
+$(TARGET)-starter.tgz: $(SRCS) Makefile
+	tar cvzf $@ $^
 
 -include $(DEPS)

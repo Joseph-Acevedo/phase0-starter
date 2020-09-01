@@ -10,11 +10,11 @@ ifndef PREFIX
 	PREFIX = $(HOME)
 endif
 
-USLOSS_VERSION = 3.6
+USLOSS_VERSION = 3.8
 
 SRCS = phase0.c
 
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -std=gnu99
 
 TARGET = phase0
 

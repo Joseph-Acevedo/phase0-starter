@@ -10,7 +10,7 @@ ifndef PREFIX
 	PREFIX = $(HOME)
 endif
 
-USLOSS_VERSION = 3.6
+USLOSS_VERSION = 4.0
 
 SRCS = phase0.c
 
